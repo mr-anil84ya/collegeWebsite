@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/masterpage.cshtml";
+}
+	<style>
+        .a {
+        
+        height:40px;
+        width:250px;
+        border-radius:8px;
+        margin-bottom:10px;
+        margin-left:13px;
+        }
+        .b {
+        
+        height:40px;
+        width:250px;
+        background-color:wheat;
+        color:blue;
+        margin-left:14px;
+        border-radius:8px;
+        font-weight:bold;
+        }
+            .b:hover {
+            background-color:blue;
+            color:white;
+            }
+
+    </style> 
+    <script>
+        function popup()
+        {
+            var a = document.getElementById("box");
+            var btn=document.getElementById("btnenquiry");
+            var b = a.style.display;
+            if (b == "none")
+            {
+                a.style.display = "block";
+                btn.style.background = "green";
+
+            }
+            else
+            {
+                a.style.display = "none";
+                btn.style.background = "#c4c1c1";
+            }
+        }
+    </script>
+	
+	
+	
+	<a href="#" id="btnenquiry" onclick="popup()" style="border-radius:10px 0px 10px 0px; height:160px;
+ padding-top:15px; width:40px; text-align:center; color:white; font-weight:bold; position:absolute; background:#c4c1c1;
+  z-index:2; top:120px; right:0px; text-decoration:none; position:fixed" >E<br/>n<br/>q<br/>u<br/>i<br/>r<br/>y<br/></a>
+   
+	
+	  <div id="box" style="width:300px; padding:20px;  height:380px; display:none; 
+background:#e2e2f6; position:absolute; top:110px; right:40px; border-radius:10px; z-index:2">
+       <form>
+           <h1>
+            <center>Enquiry Form</center>
+        </h1>
+        <input id="Txtname" placeholder="Enter Your Name..." class="a"/>
+        <input id="Txtemail" type="email" placeholder="Enter Your Email...." class="a"/>
+        <input id="Txtmbl" type="text" placeholder="Enter Your Mobile No...." class="a"/>
+        <input id="txtmsg" type="text" placeholder="Enter Your Massege....." class="a"/>
+        <input id="btnsubmit" class="b" type="Submit" OnClick="btnsubmit_Click" value="submit"/>
+       <input id="btnreset" type="submit" OnClick="btnreset_Click" class="b" value="Reset" />
+           </form>
+        </div>
+	
+
+
+
+
+<span style="color:navy;font-size:30px;font-weight:bold;margin-left:40%;margin-top:3%;">About of Company</span>
+<div class="row">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+        <br />
+<span style="font-size:25px;">M Technology is a It Company which are provide the good plateform for computer science Engineers. It is provide technical knowledge that how to get job in It sector. So we Provide many popular latest technology like as Advance Java(JSP/Servlate),Asp.net,Asp.net MVC,Android,Python,Angular Js etc</span>
+</div>
+    </div>
+
+    <br />
+    <div class="row" style="margin-top:5%;">
+        <h2 style="color:navy;font-size:35px;margin-left:15%">Boost your career with Mecatredz Technologies. Quality Guaranteed</h2>
+        <h4 style="color:black;margin-left:20%">Our courses catalogue enable individuals and teams to perform better in every technical aspect.</h4>
+    </div>
+
+
+<div class="row" style="min-height:200px;">
+    <div class="col-sm-3">
+        <i class="fa fa-users-circle" style="font-size:35px"></i>
+        <h5>Learn from industry experts</h5>
+        <p style="font-size:px;">
+Our real-time professionals helps you to learn any new technology in ease manner.
+            </p>
+    </div>
+    
+    <div class="col-sm-3">
+        <i class="icon icon-time" style="font-size:35px"></i>
+       <h5> Flexible Timings</h5>
+        <p style="font-size:15px;">
+Learn anytime from anywhere. Utilize your free time to learn new technology with our experts.
+            </p>
+    </div>
+
+    <div class="col-sm-3"><i class="fa fa-thumbs-o-up" style="font-size:35px"></i>
+       <h5> 10K+ students to believe</h5>
+           <p style="font-size:15px;">
+95% positive feedback. Have a look of our participant’s video reviews and it says all.
+               </p>
+    </div>
+
+
+    <div class="col-sm-3"><i class="fa fa-support" style="font-size:35px"></i>
+       <h5> 24/7 Support</h5>
+        <p style="font-size:15px;">
+No matter what your current issue is, we have team ready to help immediately.</p>
+    </div>
+</div>
+ 

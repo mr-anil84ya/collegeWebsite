@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function key() {
+            var t = document.getElementById("txt").value;
+            document.getElementById("sp").innerText = t;
+        }
+    </script>
+</head>
+
+<body>
+    Type here <br>
+    <input type="text" id="txt" onkeydown="key()">
+    <br>
+    <span id="sp"></span>
+</body>
+
+</html>

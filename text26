@@ -1,0 +1,91 @@
+Bootstrap:-
+------------
+Bootstrap is a collection of class selectors.which are available in external css.
+Bootstrap internally used jquery library.
+Bootstrap is used to make responsive webpages.
+Bootatrap provide the look an feel of webpages.
+
+some libraries are used in bootstrap:-
+-------------------------------------
+bootstrap.min.css(external css)
+font-awesome.min,css(external css)
+hover.min.css(external css)
+
+jquery.min.js
+bootstrap,min.js
+
+Bootstrap 3,Bootstrap 4;
+
+Note:
+------
+Height is not allowed in bootstrap.
+min-height are used in bs.
+width are not allowed in bs.
+float are not allowed in bs.
+
+Some classes of Bootstrap:-
+===========================
+Text tag classes in bs:-
+-----------------------
+text text-success
+text text-warning
+text text-danger
+text text-onfor
+text text-uppercase
+text text-lowercase
+text text-center
+text text-default......etc;
+
+image tag classess of bs:-
+--------------------------
+img img-responsive
+img img-circle
+img img-thumbnail
+img img-rounded
+
+Grid classes of bs:-
+---------------------
+col-xl-12(extra large devices)
+col-lg-12(large devices)
+col-md-12(medium devices)
+col-xs-12(extra small devices)
+col-sm-12(small devices)
+
+Section class:-
+---------------
+panel panel-heading
+panel panel-body
+
+Table classes :-
+----------------
+table table-responsive
+table table-display
+table table-sttrped etc.
+
+Icon classes:-
+--------------
+fa fa-facebook-square
+fa fa-facebook
+fa fa-google
+fa fa-whatsapp
+fa fa-twitter
+fa fa-globe
+fa fa-phone
+fa fa-trash
+fa fa-envelope............etc.
+button classes:-
+----------------
+btn btn-success
+btn btn-danger
+btn btn-info
+btn btn-warning
+btn btn-default
+btn btn-lg
+
+Form-control class used in form controls.
+hover classes in bs:-
+---------------------
+hvr hvr-bob
+hvr hvr-pulse
+hvr hvr-push
+hvr hvr-pop............etc;

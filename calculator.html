@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        function sum() {
+            var t1 = Number(document.getElementById("txt1").value);
+            var t2 = Number(document.getElementById("txt2").value);
+            document.getElementById("sp").innerText = "Addition is:" + (t1 + t2);
+        }
+
+        function sub() {
+            var t1 = Number(document.getElementById("txt1").value);
+            var t2 = Number(document.getElementById("txt2").value);
+            document.getElementById("sp").innerText = "Substraction is:" + (t1 - t2);
+        }
+
+        function mul() {
+            var t1 = Number(document.getElementById("txt1").value);
+            var t2 = Number(document.getElementById("txt2").value);
+            document.getElementById("sp").innerText = "Multiplication is:" + (t1 * t2);
+        }
+
+        function divi() {
+            var t1 = Number(document.getElementById("txt1").value);
+            var t2 = Number(document.getElementById("txt2").value);
+            document.getElementById("sp").innerText = "Division is:" + (t1 / t2);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 panel panel-body" style="margin-top: 5%;background-color: rgb(255, 81, 0);border:2px solid black;">
+                    <h3>
+                        <center style="color: black;">Calculator</center>
+                    </h3>
+                    Enter First Number
+                    <input type="text" class="form-control" id="txt1"> Enter Scond Number
+                    <input type="text" class="form-control" id="txt2">
+                    <br>
+                    <input type="button" value="+" class="btn btn-success" onclick="sum()">
+                    <input type="button" value="-" class="btn btn-success" onclick="sub()">
+                    <input type="button" value="*" class="btn btn-success" onclick="mul()">
+                    <input type="button" value="/" class="btn btn-success" onclick="divi()">
+                    <br><br>
+                    <span id="sp"></span>
+
+
+                </div>
+                <div class="col-sm-4"></div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

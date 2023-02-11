@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/fonts/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/css/img.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery-2.1.0.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+
+
+    <script>
+        var img = ["Software-development.jpg", "s1.jpg", "s2.png", "s3.jpg", "Software-development (1).jpg"];
+        var i = 0;
+        function slideImg() {
+            document.getElementById("slide").src = "../Content/image/"+img[i];
+            if (i< img.length-1)
+            {
+                i++;
+            }
+            else {
+                i = 0;
+            }
+        }
+        setInterval(slideImg, 1000);
+        
+    </script>
+    <style>
+
+        #foot {
+        margin-top:2%;
+        }
+            #foot ul {
+            list-style-type:none;
+            }
+                #foot ul li  a{
+                    font-size:10px;
+                    color:#444343;
+                    font-family:'Microsoft New Tai Lue';
+                }
+        h6 a {
+            color:#444343;
+            margin-left:15%;
+            font-family:'Microsoft New Tai Lue';
+        }
+    </style>
+</head>
+<body>
+   
+          <nav class="navbar navbar-default templatemo-nav" role="navigation">
+        <div class="container-fluid" >
+            <div class="navbar-header"  >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="collapse navbar-collapse"></a>
+                 <img src="~/Content/image/logo.jpg"  height="30px" width="30px"  />
+                      <span style="font-size:20px;font-weight:bold;">MTechnology</span>
+                      <span style="font-size:13px;font-family:'Times New Roman';  color:navy;position:relative;top:12px;left:-130px;" >The way to fly...</span>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" id="menu" style="margin-top:22px; color:red;">
+                    <li  style="font-weight:bold;color:white;" ><a href="~/Home">HOME</a></li>
+                    <li  style="font-weight:bold;color:white;"><a href="~/AboutUS/Home">ABOUT US</a></li>
+                     <li  style="font-weight:bold;color:white;"><a href="~/Home/Registration">REGISTRATION</a></li>
+                     <li  style="font-weight:bold;color:white;"><a href="~/User/ChanjPassword">DashBoard</a></li>
+                    
+                    
+                @*    <li  style="font-weight:bold;color:white;"><a href="~/User/ChanjPassword"></a></li>*@
+                    <li   style="font-weight:bold;color:white;"><a href="#">CONTACT</a></li>
+                    
+
+                    <li><a href="~/Home/Login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+               @* <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>*@
+            </div>
+
+        </div>
+    </nav>
+
+ 
+                  
+
+      
+ <!------------------------------start slider-------------------------------------------------------->
+          <div class="row" style="margin-top:-20px;">
+              <img src="~/Content/image/Software-development%20(1).jpg" id="slide"  height="400px" width="100%">
+          </div>
+<!---------------------------------end slider-------------------------------------------------->
+          
+            <div class="row content">
+                 @RenderBody()
+            </div>
+
+
+<!----------------------------------Start footer1--------------------------------------------->
+         				
+  
+
+
+
+     <section class="latest">
+            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="lathead">
+                <h3>Offer Technology</h3>
+                <P>We are provide different type of technology for begineers.</P>
+            </div>
+
+
+            <div class="container">
+                <div class="row panel panel-body" style="border:2px solid #f1f1f1">
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-12 col-sm-6 col-md-4 panel panel-body">
+                        <div class="lat" style="border:2px solid #f1f1f1;margin-top:5%">
+                            <a href="#">
+                                <figure class="panel panel">
+                                    <img src="~/Content/image/python.jpg" class="img-thumbnail"  alt="chair" style="height:200px;width:100%">
+                                </figure>
+                                <span>Python</span>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                                <h6 class="text-uppercase" style="color:#0062c5">Python</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-sm-6 col-md-4 panel">
+                        <div class="lat" style="border:2px solid #f1f1f1;margin-top:5%">
+                            <a href="#">
+                                <figure>
+                                    <img src="~/Content/image/spring.png" alt="coffeetable" style="height:200px;width:100%">
+                                </figure>
+                                <span >Spring</span>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                                <h6 class="text-uppercase" style="color:#0062c5">Spring</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1100" class="col-12 col-sm-6 col-md-4 panel">
+                        <div class="lat" style="border:2px solid #f1f1f1;margin-top:5%">
+                            <a href="#">
+                                <figure>
+                                    <img src="~/Content/image/java.jpg" alt="curtains" style="height:180px;width:80%">
+                                </figure>
+                                <span>Java</span>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                                <h6 class="text-uppercase" style="color:#0062c5">Java</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-12 col-sm-6 col-md-4">
+                        <div class="lat" style="border:2px solid #f1f1f1;margin-top:5%">
+                            <a href="productsingle.html">
+                                <figure>
+                                    <img src="~/Content/image/android.jpg"   alt="curtains" style="height:170px;width:80%">
+                                </figure>
+                                <span>Android</span>
+                                <a href="productsingle.html">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                                <h6 class="text-uppercase" style="color:#0062c5">Android </h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" class="col-12 col-sm-6 col-md-4">
+                        <div class="lat" style="border:2px solid #f1f1f1;margin-top:5%">
+                            <a href="#">
+                                <figure>
+                                    <img src="~/Content/image/php.jpg"  alt="curtains" style="height:180px;width:80%">
+                                </figure>
+                                <span>Php</span>
+                                <a href="productsingle.html">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                                <h6 class="text-uppercase" style="color:#0062c5">Php</h6>
+                            </a>
+                        </div>
+                    </div>
+                   <div data-aos="fade-up" data-aos-duration="1100" class="col-12 col-sm-6 col-md-4">
+                        <div class="lat" style="border:2px solid #f1f1f1;margin-top:5%">
+                            <a href="#">
+                                <figure>
+                                    <img src="~/Content/image/asp.net.jpg"  alt="curtains"  style="height:180px;width:90%">
+                                </figure>
+                                <span>Asp.net</span>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                                <h6 class="text-uppercase" style="color:#0062c5">Asp.net(MVC)</h6>
+                            </a>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+            <a class="latestbtn" href="About.aspx">
+                VIEW MORE
+            </a>
+        </section>
+
+
+        <section data-aos="fade-up" data-aos-duration="1000" class="ourblog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="blogtext">
+                            <h3>OUR Gallery</h3>
+                            <p>Recently Seminar Organize in  Gov. polytechnic college</p>
+                            <a class="carousel-control-prev left myleft" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true">
+                                </span>
+                            </a>
+                            <a class="carousel-control-next right myright" href="#carouselExample" role="button" data-slide="next">
+                                <span class="fa fa-angle-right" aria-hidden="true">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-8 lastcarousel">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-6 last">
+                                            <a href="blog.html">
+                                                <img src="~/Content/image/g2.jpg"  alt="table" class="w-100" style="height:200px;width:100%">
+                                            </a>
+                                            <p>Seminar in Gov.Girls Polytechnic Amethi </p>
+                                            <a class="ourblogbtn" href="#">
+                                                +more
+                                            </a>
+                                        </div>
+                                        <div class="col-6 last1">
+                                            <a href="blog.html">
+                                                <img src="~/Content/image/g1.jpg"  alt="bench" class="w-100" style="height:200px;width:100%">
+                                            </a>
+                                            <p>Seminar in Gov.Girls Polytechnic Amethi</p>
+                                            <a class="ourblogbtn" href="#">
+                                                +more
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-6 last">
+                                            <a href="blog.html">
+                                                <img src="~/Content/image/g3.jpg"  alt="table" class="w-100" style="height:200px;width:100%">
+                                            </a>
+                                            <p>Seminar in Gov.Girls Polytechnic Lucknow</p>
+                                            <a class="ourblogbtn" href="#">
+                                                +more
+                                            </a>
+                                        </div>
+                                        <div class="col-6 last1">
+                                            <a href="blog.html">
+                                                <img src="~/Content/image/g4.jpg"   alt="bench" class="w-100" style="height:200px;width:100%">
+                                            </a>
+                                            <p>Seminar in Gov.Girls Polytechnic Amethi</p>
+                                            <a class="ourblogbtn" href="#">
+                                                +more
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-6 last">
+                                            <a href="blog.html">
+                                                <img src="images/carousel3.jpg" alt="table" class="w-100">
+                                            </a>
+                                            <p>some of the best furniture designs of the year 1027</p>
+                                            <a class="ourblogbtn" href="blog.html">
+                                                +more
+                                            </a>
+                                        </div>
+
+                                        <div class="col-6 last1">
+                                            <a href="blog.html">
+                                                <img src="images/carousel4.jpg" alt="bench" class="w-100">
+                                            </a>
+                                            <p>some of the best furniture designs of the year 1027</p>
+                                            <a class="ourblogbtn" href="blog.html">
+                                                +more
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+ <!----------------------------------end footer1--------------------------------------------->
+
+
+<!----------------------------------Start footer2--------------------------------------------->
+          <div class="row" style="min-height:250px;background:#d4cfcf;box-shadow:0px 2px 0px 2px;" id="foot">
+              <div class="col-sm-3" >
+                   <ul>
+                  <li style="color:#444343; font-weight:bold;font-size:16px;margin-top:25%;">ADDRESS</li><br />
+                       <li><a href="" style="font-size:15px;">C-133/Sector-A  Kapoorthala road to Gole market MahaNagar Lucknow(226006) </a></li>
+ </div>
+              <div class="col-sm-3">
+                  <ul>
+                  <li style="color:#444343; font-weight:bold;font-size:16px;margin-top:25%;">SITE NAVIGATION</li></ul>
+                    <h6><a href="#">GO TO HOME</a></h6>
+                    <h6><a href="#">SERVICES</a></h6>
+                    <h6><a href="#">JOIN US</a></h6>
+                    <h6><a href="#">GALLERY</a></h6>
+                    <h6><a href="#">CONTACT US</a></h6>
+              </div>
+              <div class="col-sm-3">
+                <ul>
+                     <li style="color:#444343; font-weight:bold;font-size:16px; margin-top:25% "> FEATURES</li></ul>            
+                    <h6><a href="#"> WEB APPLICATION</a></h6>
+                    <h6><a href="#"> DESKTOP APPLICATION</a></h6>
+                    <h6><a href="#"> ANDROID APPLICATION</a></h6>
+                    <h6><a href="#"> WINDOWS APPLICATION</a></h6>
+                    <h6><a href="#"> WEB SERVICES</a></h6>
+              </div>
+              <div class="col-sm-3" >
+                  <ul>
+                       <li style="color:#444343; font-weight:bold;font-size:16px;margin-top:25%;">SERVICES</li>
+                      </ul>
+                     <h6><a href="#">SOFTWARE DEVELOPEMENT</a></h6>
+                     <h6><a href="#">ANDROID APPLICATION</a></h6>
+                     <h6><a href="#">SUMMER TRAINING(45-60 DAYS)</a></h6>
+                      <h6><a href="#">WINTER TRAINING(90-120 DAYS)</a></h6>
+                      <h6><a href="#">APPRENTICESHIP(180-210)</a></h6>
+              </div>
+          </div>
+<!----------------------------------------------end footer 2--------------------------------->
+
+
+          <div class="row"><div class="col-sm-12" style="height:40px;background:black;color:white;text-align:center; font-size:12px;line-height:40px;">(C) 2018, ALL RIGHTS RESERVED. M TECHNOLOGY THEME. DESIGNED BY <a href="#">TECHNICAL TEAM</a></div></div>
+         
+    
+</body>
+</html>

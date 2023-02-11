@@ -1,0 +1,66 @@
+body{
+    background-image: url('../s4.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.title
+{
+    min-height: 80px;
+    color:white;
+    background: teal;
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1%;
+    text-align: center;
+    word-spacing: 40px;
+    font-stretch:extra-condensed;
+}
+.main
+{
+    min-height: 300px;
+    padding: 0px;
+}
+.address
+{
+min-height: 300px;
+color: black;
+font-size: 16px;
+ background: whitesmoke;
+text-align: justify;
+padding: 8%;
+}
+.enquiry
+{
+    min-height: 300px;
+    /* background: tomato; */
+}
+.map
+{
+    min-height: 300px;
+    /*background: hotpink;*/
+}
+.footer
+{
+    background: black;
+    min-height: 60px;
+    padding: 1%;
+    color:maroon;
+    font-size: 25px;
+    text-align:center;
+    cursor: pointer;
+}
+input{
+    padding-top: 2%;
+    margin-top: 2.5%;
+}
+
+.form-control:focus
+{
+    border:2px solid maroon;
+}
+.form-control::placeholder
+{
+    color:maroon;
+    font-family: 'Monotype Corsiva';
+}
